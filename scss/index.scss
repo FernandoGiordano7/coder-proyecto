@@ -1,0 +1,376 @@
+@import './partials/maps';
+@import './partials/mixins';
+@import './partials/variables';
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navegacion{
+    @include sizes(100%, 60px);
+    background-color: $blanco;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: map-get($estilos, flex);
+    justify-content: map-get($estilos, sbetween);
+    align-items: map-get($estilos, centrar);
+
+    #chek-menu ,label{
+        display: map-get($estilos, no);
+    }
+
+    .logo-container {
+        display: map-get($estilos, flex);
+        align-items: map-get($estilos, centrar);
+        justify-content: map-get($estilos, saround);
+        
+        .logo{
+            height: 60px;
+
+        }
+    }
+
+
+    .nav-item {
+        @include sizes(50%, 100%);
+        display: map-get($estilos, flex);
+        list-style: map-get($estilos, no);
+        align-items: map-get($estilos,centrar);
+        margin-right: 20%;
+        margin-top: 0%;
+
+        .item{
+            @include sizes(20%, 130%);
+            display: map-get($estilos, flex);
+            align-items: map-get($estilos, centrar);
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: all .4s ease;
+
+            a{
+                display: map-get($estilos, flex);
+                justify-content: map-get($estilos, centrar);
+                margin-top: 20px;
+                width: 100px;
+                color: $azul;
+                font-family: $franklin;
+                font-size: large;
+                text-decoration: map-get($estilos, no);
+            }
+        
+        &:hover{
+            background-color: $azul;
+
+            a{
+                color: $blanco;
+            }
+        }
+        }
+    }
+}
+
+.GiordanoCam{
+    @include sizes(100%, 550px);
+    display: map-get($estilos, flex);
+    flex-direction: map-get($estilos, columna);
+    background-image: url('../img/46538-camiones.jpg');
+    background-size: cover;
+
+    .logo-div{
+        display: map-get($estilos, flex) ;
+    align-items: map-get($estilos, centrar);
+    justify-content: map-get($estilos, centrar);
+
+        .img-1{
+            display: map-get($estilos, flex); 
+            width: 150px;
+            margin-top: 20px;
+        }
+    }
+
+    .div-h1{
+
+        .h1 {
+            text-align: map-get($estilos, centrar);
+            color: $blanco;
+            font-family:$nexa ;
+            font-size:400%;
+            margin-top: 10px;
+        }
+    }
+
+    .boton{
+        display: map-get($estilos, flex);
+        justify-content: map-get($estilos, centrar);
+        align-items: map-get($estilos, centrar);
+        margin-top: 50px;
+
+        button {
+            padding: 15px;
+            border-radius: 15px;
+            border-color: $blanco;
+            background-color: transparent;
+            color: $blanco;
+            font-family: $franklin;
+            font-size: x-large;
+            transition: all 0.4s ease;
+
+            &:hover{
+                background-color: $blanco;
+            color: black;
+            }
+        }         
+    }
+
+    .logos{
+        display: map-get($estilos, flex);
+        justify-content: map-get($estilos, centrar);
+
+        .img-logos{
+            @include sizes(150px, 150px);
+            display: inline-flex;
+            flex-direction: map-get($estilos, flecha);
+            margin:13px;
+            padding: 12px;
+            border-radius: 15px;
+            background-color: $gris;
+            color: $blanco;
+        }
+    }
+}
+
+.h1-destacados{
+    display: map-get($estilos, flex);
+    justify-content: map-get($estilos, centrar);
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.destacados{
+    display: map-get($estilos, flex);
+    align-items: map-get($estilos, centrar);
+    justify-content: map-get($estilos, centrar);
+    margin-top: 50px;
+
+}
+
+.contacto-container{
+    display: map-get($estilos, flex);
+    justify-content: map-get($estilos, centrar);
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+    .contacto{
+        @include sizes(500px, 550px);
+        display: map-get($estilos, flex);
+        flex-direction: map-get($estilos, columna);
+        align-items: map-get($estilos, centrar);
+        border-radius: 10px;
+        background-color: $gris;
+        margin-top: 15px;
+        width: 40%;
+        color:$azuloscuro;
+
+        h2{
+            margin-top: 20px;
+            font-family: $franklin;
+            font-size: xx-large;
+        }
+
+        input{
+            @include sizes(400px, 40px);
+            margin:10px;
+            border-radius: 10px;
+            margin:20px;
+            }
+
+        p{
+            margin-top: 50px;
+            font-family:Arial, Helvetica, sans-serif
+        }
+
+        #mensaje{
+            height: 80px;
+        }
+
+        button {
+            @include sizes(200px, 50px);
+            border-radius: 15px;
+            color: $blanco;
+            background-color: $azul;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all 0.4s ease;
+
+            &:hover{
+                background-color: $azulclaro;
+            }
+        }
+
+        a{
+            color:$azul;
+        }
+
+        .redes{
+            margin-top: 50px ;
+
+            .bxl-whatsapp{
+                color: $blanco;
+                background-color: rgb(49, 178, 49);
+                border-radius: 5px;
+            }
+
+            .bxl-instagram{
+                color: $blanco;
+                background: #f09433; 
+                background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+                border-radius: 5px;
+            }
+
+            .bxl-facebook{
+                color: $blanco;
+                background-color: $azul;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.qs{
+    display: map-get($estilos, flex);
+    justify-content: map-get($estilos, centrar);
+    margin-top: 30px;
+    font-family: $franklin;
+    color:$azuloscuro;
+}
+
+.section{
+    display: map-get($estilos, flex);
+    margin-top: 50px;
+
+    
+    .nosotros{
+        @include sizes(100%, 500px);
+        display: map-get($estilos, flex);
+        background-color:$azul ;
+        
+        img{
+            @include sizes(50%, 450px);
+            margin-left: 5rem;
+            margin-top: 25px;
+            object-fit: cover;
+        }
+
+        p{
+            display:map-get($estilos, flex) ;
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            color: white;
+            line-height: 35px;
+            text-align: map-get($estilos, centrar);
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+    }
+}
+
+.colven {
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+    img{
+        width: 50%;
+        height: 450px;
+        margin-right: 5rem;
+        margin-top: 25px;
+        object-fit: cover;
+    }
+
+    p{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+        line-height: 35px;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: x-large;
+    }
+}
+
+.ubicacion{
+    @include sizes(100%, 550px);
+    margin-top: 85px ;
+    text-align: map-get($estilos, centrar);
+    font-family: $franklin;
+    color: $azuloscuro;
+
+    iframe{
+        display: map-get($estilos, flex);
+        justify-content: map-get($estilos, centrar);
+        width: 100%;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: map-get($estilos, no);
+}
+
+.repuestos{
+    display: map-get($estilos, flex);
+    flex-direction: map-get($estilos, columna);
+    align-items: map-get($estilos, centrar);
+    margin-top: 50px;
+
+    h2{
+        margin-bottom: 50px;
+        font-family: $franklin;
+        font-size:300%;
+        color: $azuloscuro;
+    }
+
+}
+
+.paginacion{
+    display: map-get($estilos, flex);
+    justify-content: map-get($estilos, centrar);
+    margin-top: 50px;
+}
+
+.acoplados{
+    display: map-get($estilos, flex);
+    flex-direction: map-get($estilos, columna);
+    align-items: map-get($estilos, centrar);
+    margin-top: 50px;
+
+    h2{
+        font-family: $franklin;
+        font-size:300%;
+        color: $azuloscuro;
+    }
+}
+
+
+.footer{
+    @include sizes(100%, 50px);
+    bottom: 0%;
+    display: map-get($estilos, flex);
+    flex-direction: map-get($estilos, flecha);
+    justify-content: map-get($estilos, saround);
+    align-items: map-get($estilos, centrar);
+    margin-top: 30px;
+    background-color:$azul;
+    color: $blanco;
+    font-family:Arial, Helvetica, sans-serif ;
+};
+
+@import './partials/queries';
