@@ -81,7 +81,7 @@ body {
 .GiordanoCam .div-h1 .h1 {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-family: "Nexa-ExtraLight";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 400%;
   margin-top: 10px;
 }
@@ -708,9 +708,6 @@ a {
     font-size: 150%;
     margin-top: 25px;
     line-height: 120%;
-  }
-  .form {
-    margin-top: 100px;
   }
 }
 

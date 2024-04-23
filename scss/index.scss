@@ -56,7 +56,7 @@ body {
                 margin-top: 20px;
                 width: 100px;
                 color: $azul;
-                font-family: $franklin;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 font-size: large;
                 text-decoration: map-get($estilos, no);
             }
@@ -96,7 +96,7 @@ body {
         .h1 {
             text-align: map-get($estilos, centrar);
             color: $blanco;
-            font-family:$nexa ;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
             font-size:400%;
             margin-top: 10px;
         }
@@ -114,7 +114,7 @@ body {
             border-color: $blanco;
             background-color: transparent;
             color: $blanco;
-            font-family: $franklin;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: x-large;
             transition: all 0.4s ease;
 
@@ -176,7 +176,7 @@ body {
 
         h2{
             margin-top: 20px;
-            font-family: $franklin;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: xx-large;
         }
 
@@ -246,7 +246,7 @@ body {
     display: map-get($estilos, flex);
     justify-content: map-get($estilos, centrar);
     margin-top: 30px;
-    font-family: $franklin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:$azuloscuro;
 }
 
@@ -310,7 +310,7 @@ body {
     @include sizes(100%, 550px);
     margin-top: 85px ;
     text-align: map-get($estilos, centrar);
-    font-family: $franklin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: $azuloscuro;
 
     iframe{
@@ -333,7 +333,7 @@ a {
 
     h2{
         margin-bottom: 50px;
-        font-family: $franklin;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size:300%;
         color: $azuloscuro;
     }
@@ -353,7 +353,7 @@ a {
     margin-top: 50px;
 
     h2{
-        font-family: $franklin;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size:300%;
         color: $azuloscuro;
     }
